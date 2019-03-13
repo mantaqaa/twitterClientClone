@@ -2,8 +2,8 @@
 //  HomeTableViewController.swift
 //  Twitter
 //
-//  Created by Matthew Rodriguez on 3/1/19.
-//  Copyright © 2019 Dan. All rights reserved.
+//  Created by Mantaqaa Khan on 3/11/19.
+//  Copyright © 2019 . All rights reserved.
 //
 
 import UIKit
@@ -21,7 +21,7 @@ class HomeTableViewController: UITableViewController {
         tableView.refreshControl = myRefreshControl
         
         tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 150
+        self.tableView.estimatedRowHeight = 250
       
     }
     
