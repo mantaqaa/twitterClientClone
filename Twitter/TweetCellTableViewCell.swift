@@ -38,6 +38,12 @@ class TweetCellTableViewCell: UITableViewCell {
     
     
     @IBAction func retweet(_ sender: Any) {
+        TwitterAPICaller.client?.retweet(tweetId: tweetId, success: {
+            self.setRetweeted(true)
+        }, failure: { (error) in
+            print("Error in retweeting: \(error)")
+        })
+        
     }
     
     func setRetweeted(_ isRetweeted: Bool) {
@@ -50,6 +56,7 @@ class TweetCellTableViewCell: UITableViewCell {
             retweetButton.isEnabled = true
         }
     }
+    
     
     func setFavorite(_ isFavorited:Bool){
         favorited = isFavorited
